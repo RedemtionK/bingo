@@ -5,3 +5,38 @@
 .header{
   background-color: aquamarine;
 }
+.button-container{
+  display: flex;
+  column-gap: 4px;
+  flex-wrap: wrap;
+  
+}
+
+.cash-button{
+  background-color: #1b2efd; /* Green */
+  border: 10px;
+  color: white;
+  padding: 5px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-color: silver;
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  background: radial-gradient(circle at 10px 10px, #5cabff, #000);
+}
+.cash-button:nth-child(2){
+  margin-right: 90%;
+}
+
+.played{
+  color: #5cabff;
+  background-color: #000;
+}
+
+
