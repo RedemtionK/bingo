@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 .component{
   margin: 1rem;
   text-align: center;
 }
 .header{
-  background-color: aquamarine;
+  background-color: rgb(80, 126, 241);
+  align-items: stretch;
+  font-family: 'Concert One', cursive;
+  font-size: large;
+ 
+  color: rgb(231, 231, 59);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 1rem;
 }
+
+/*====================Header========================*/
 .button-container{
   display: flex;
   column-gap: 4px;
@@ -16,27 +28,117 @@
   background-color: #1b2efd; /* Green */
   border: 10px;
   color: white;
+  font-family: 'Concert One', cursive;
   padding: 5px;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size:30px;
+  margin: 5px 2px;
   cursor: pointer;
   border-color: silver;
   display: block;
   background: black;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  margin: 0;
+  height: 80px;
+  width: 80px;
+  
+  
   background: radial-gradient(circle at 10px 10px, #5cabff, #000);
 }
-.cash-button:nth-child(2){
-  margin-right: 90%;
+.cash-button:disabled{
+  background-color: #dbdbdb; /* Green */
+  border: auto;
+  color: rgb(0, 0, 0);
+  padding: auto;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  
+  cursor: pointer;
+  border-color: silver;
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  
+  background: radial-gradient(circle at 10px 10px, #f3f3f3, rgb(173, 172, 172));
+}
+.cash-button:nth-child(3){
+  margin-right: 50%;
+ 
+  
+
 }
 
+
+
+.column {
+  float: left;
+  width: 31%;
+  padding: 16px;
+  height: 500px;;
+  background-color: gold;
+}
+.main-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#numbersOfButton{
+  width: 100%;
+  table-layout: fixed;
+  padding: 20px;
+  background-color: #000;
+  color: yellow;
+  font-size: 20px;
+  font-family: 'Concert One', cursive;
+  border-color: silver;
+  border-width: 5px;
+}
+.play{
+  background-color: blue;
+  display: flex;
+  column-gap: 5px;
+  row-gap: 3px;
+  flex-wrap: wrap;
+  
+  
+  
+}
 .played{
   color: #5cabff;
-  background-color: #000;
+  background-color: rgb(248, 112, 112) !important;
+  
+
 }
+
+.myNumberButtons:nth-child(6){
+  margin-right: 1%;
+
+}
+.myNumberButtons:nth-child(12){
+  margin-right: 0%;
+
+}
+.myNumberButtons:nth-child(18){
+  margin-right: -1%;
+
+}
+.service-button{
+  background-color: gold;
+  color: black;
+  border-color: silver;
+  border-width: 5px;
+  font-size: 20px;
+  font-family: 'Concert One', cursive;
+  padding: auto;
+  border-radius: 10%;
+  
+
+}
+img {  
+  max-width: 100%;  
+  height: auto;  
+  }  
 
 

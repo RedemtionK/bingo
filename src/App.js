@@ -23,6 +23,7 @@ const clearNumbers = ()=>{
   setBet(0);
   setActive(true);
   setPlayNumbers([]);
+  setOtherActive(false);
 }
 const betMoney=(amount)=>{
   setBet(bet+amount);
@@ -66,6 +67,12 @@ const betMoney=(amount)=>{
   }
   }
 
+  const removePlayedNumber=(num)=>{
+    const filter = playNumber.filter((number)=>number !==num)
+    setPlayNumbers(filter);
+    setActive(true)
+  }
+
   const hideDiv = ()=>{
     setModal({
     visble:false
@@ -77,14 +84,21 @@ const betMoney=(amount)=>{
   return (
     <>
     <Header/>
+
 <div className='main-container'>
- 
- 
+ <div className='column'>
   <Money addMoney={betMoney} deactivate={active}/>
+  </div>
+  <div className='column'>
   <Play clickOnCash={clickOnCash} clickOnRandom={quickPick} onReset={clearNumbers} 
  chooseNumber={playNumber} clickAddNumber={addNumber} deactivate={!active} otherDeactivation={otherActive}/>
-  <Invoice playNumber={playNumber} amountBet={bet} />
+  </div>
+  
+ <div className='column'>
+ <Invoice playNumber={playNumber} amountBet={bet} removePlayedNumber={removePlayedNumber} />
   <Modal onHide={hideDiv} modalState={modal}/>
+ </div>
+
  
 </div> 
 </>

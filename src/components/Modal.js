@@ -5,7 +5,7 @@ const Modal = (props) => {
     <div className={props.modalState.visible===false ? " ":"hide"} onClick={()=>{
       props.onHide()
     }}>
-
+<br/>
             <div className="modal" >
                 <div className="modal-container">{props.modalState.msg}</div>
             </div>
