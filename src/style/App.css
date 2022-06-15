@@ -76,7 +76,7 @@
   float: left;
   width: 31%;
   padding: 16px;
-  height: 500px;;
+  height: 510px;;
   background-color: gold;
 }
 .main-container:after {
@@ -136,9 +136,32 @@
   
 
 }
+.service-button:disabled{
+
+ background-color: rgb(121, 121, 121);
+  color: black;
+  border-color: gold;
+  border-width: 5px;
+  font-size: 20px;
+  font-family: 'Concert One', cursive;
+  padding: auto;
+  border-radius: 10%;
+
+}
 img {  
   max-width: 100%;  
   height: auto;  
   }  
+
+  .invoice{
+    font-family: 'Concert One', cursive;
+  font-size: medium;
+
+  }
+  .modal-container{
+    font-family: 'Concert One', cursive;
+    font-size: small;
+    background-color: rgb(80, 126, 241);;
+  }
 
 

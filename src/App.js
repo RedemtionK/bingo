@@ -57,12 +57,14 @@ const betMoney=(amount)=>{
     if(bet===0){
 
       alert("you can't bet $0")
+      
     }else{
 
        setModal({
-      msg:`This numbrs ${playNumber.toString()} have been played with a total amount of $${bet}`,
+      msg:`This numbrs ${playNumber.toString()} have been played with a total amount of $${bet} \n Click Me !`,
       visble:true
     })
+    setActive(true);
     setOtherActive(true);
   }
   }
