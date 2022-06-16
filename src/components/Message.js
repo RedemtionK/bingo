@@ -1,17 +1,17 @@
 import React from 'react'
 
-const Modal = (props) => {
+const Message = (props) => {
   return (
     <div className={props.modalState.visible===false ? " ":"hide"} onClick={()=>{
       props.onHide()
     }}>
 <br/>
-            <div className="modal" >
-                <div className="modal-container">{props.modalState.msg}</div>
+            <div className="message" >
+                <div className="message-container">{props.modalState.msg}</div>
             </div>
     
         </div>
   )
 }
 
-export default Modal
+export default Message

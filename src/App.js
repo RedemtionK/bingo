@@ -4,7 +4,9 @@ import Header from './components/Header';
 import Money from './components/Money';
 import Play from './components/Play';
 import Invoice from './components/Invoice';
-import Modal from './components/Modal';
+import Modal from './components/Message';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   const[playNumber,setPlayNumbers]=useState([]);
@@ -56,12 +58,12 @@ const betMoney=(amount)=>{
   const clickOnCash = ()=>{
     if(bet===0){
 
-      alert("you can't bet $0")
+      alert("Betting $0 is not allowed ")
       
     }else{
 
        setModal({
-      msg:`This numbrs ${playNumber.toString()} have been played with a total amount of $${bet} \n Click Me !`,
+      msg:`This numbrs ${playNumber.toString()} have been played with a total amount of $${bet} \n  Click Me !`,
       visble:true
     })
     setActive(true);
@@ -87,16 +89,16 @@ const betMoney=(amount)=>{
     <>
     <Header/>
 
-<div className='main-container'>
- <div className='column'>
+<div className='row align-items-start'>
+ <div className='col'>
   <Money addMoney={betMoney} deactivate={active}/>
   </div>
-  <div className='column'>
+  <div className='col'>
   <Play clickOnCash={clickOnCash} clickOnRandom={quickPick} onReset={clearNumbers} 
  chooseNumber={playNumber} clickAddNumber={addNumber} deactivate={!active} otherDeactivation={otherActive}/>
   </div>
   
- <div className='column'>
+ <div className='col'>
  <Invoice playNumber={playNumber} amountBet={bet} removePlayedNumber={removePlayedNumber} />
   <Modal onHide={hideDiv} modalState={modal}/>
  </div>

@@ -72,11 +72,10 @@
 
 
 
-.column {
-  float: left;
-  width: 31%;
-  padding: 16px;
-  height: 510px;;
+.col {
+ 
+  padding: 10px;
+  height: 520px;;
   background-color: gold;
 }
 .main-container:after {
@@ -85,8 +84,8 @@
   clear: both;
 }
 #numbersOfButton{
-  width: 100%;
-  table-layout: fixed;
+  width: 65px;
+  
   padding: 20px;
   background-color: #000;
   color: yellow;
@@ -121,7 +120,7 @@
 
 }
 .myNumberButtons:nth-child(18){
-  margin-right: -1%;
+  margin-right: 0%;
 
 }
 .service-button{
@@ -158,10 +157,11 @@ img {
   font-size: medium;
 
   }
-  .modal-container{
+  .message-container{
     font-family: 'Concert One', cursive;
     font-size: small;
-    background-color: rgb(80, 126, 241);;
-  }
+    background-color: rgb(80, 126, 241);
+    
+     }
 
 
