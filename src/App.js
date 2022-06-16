@@ -14,7 +14,7 @@ function App() {
   const[active,setActive]=useState(true);
   const [otherActive,setOtherActive]=useState(false);
 
-  const[modal,setModal]=useState({
+  const[message,setMessage]=useState({
     msg:``,
     visble:false
   });
@@ -62,8 +62,8 @@ const betMoney=(amount)=>{
       
     }else{
 
-       setModal({
-      msg:`This numbrs ${playNumber.toString()} have been played with a total amount of $${bet} \n  Click Me !`,
+      setMessage({
+      msg:`This numbrs ${playNumber.toString()} have been played with a total amount of $${bet}    Click Me !`,
       visble:true
     })
     setActive(true);
@@ -78,7 +78,7 @@ const betMoney=(amount)=>{
   }
 
   const hideDiv = ()=>{
-    setModal({
+    setMessage({
     visble:false
     });
   }
@@ -100,7 +100,7 @@ const betMoney=(amount)=>{
   
  <div className='col'>
  <Invoice playNumber={playNumber} amountBet={bet} removePlayedNumber={removePlayedNumber} />
-  <Modal onHide={hideDiv} modalState={modal}/>
+  <Modal onHide={hideDiv} messageState={message}/>
  </div>
 
  
