@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Money from './components/Money';
 import Play from './components/Play';
 import Invoice from './components/Invoice';
-import Modal from './components/Message';
+import Message from './components/Message';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -100,7 +100,7 @@ const betMoney=(amount)=>{
   
  <div className='col'>
  <Invoice playNumber={playNumber} amountBet={bet} removePlayedNumber={removePlayedNumber} />
-  <Modal onHide={hideDiv} messageState={message}/>
+  <Message onHide={hideDiv} messageState={message}/>
  </div>
 
  
